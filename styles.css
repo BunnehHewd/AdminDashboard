@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+}
+
+
+/** SIDEBAR **/
+
+.sidebar {
+    border-right: 1px solid #666668;
+    background-color: #E84848;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;  
+    gap: 20px;
+}
+
+.dashlogo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+}
+
+.dashlogo p {
+    font-family: 'Oswald', sans-serif;
+    font-size: calc(1.5vh + 1.5vw);
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.dashIcon {
+    fill: white;
+    width: 4vw;
+}
+
+.navigation, .sitewide, .policies {
+    font-family: 'Oswald', sans-serif;
+    font-size: calc(0.9vh + 0.9vw);
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navigation {
+    padding-left: 15px;
+    gap: 30px;
+}
+
+.sitewide a, .policies a {
+    gap: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.navIcon, .searchIcon {
+    fill: white;
+    width: 1.75vw;
+}
+
+
+/** TOP BAR **/
+
+.top {
+    border: 2px solid;
+    height: 20vh;
+    padding: 10px;
+}
+
+.secOne, form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/** SEARCH **/
+
+.searchIcon {
+    fill:black;
+}
+
+input {
+    width: 50vw;
+    height: 1.85vw;
+    background-color: #B4FFFF;
+    border: 1px solid #238e9C;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type="text"]:focus {
+    border: 1px solid white;
+    outline: none;
+    box-shadow: 1px 1px 5px #238E9C;
+}
