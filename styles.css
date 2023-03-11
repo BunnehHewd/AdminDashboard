@@ -209,8 +209,6 @@ button {
     font-weight: 600;
 }
 
-
-
 .projectexamples {
     padding-top: 1vh;
     display: grid;
@@ -272,6 +270,7 @@ button {
     height: 100%;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    box-shadow: 2px 2px 3px #a9aca9;
 }
 
 .announcenotice { 
@@ -296,7 +295,7 @@ button {
 
 .announcenotice > p {
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -313,4 +312,29 @@ button {
     height: 100%;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 1vh 2vw;
+    gap: 1vh;
+    box-shadow: 2px 2px 3px #a9aca9;
+}
+
+.tweetIcon {
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.iconandall {
+    display: flex;
+    gap: 2vw;
+}
+
+.nametag {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(0.7vh + 0.5vw); 
+    font-weight: 600;
+}
+
+.nametag span:last-child {
+    font-weight: 400;
 }
